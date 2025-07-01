@@ -275,7 +275,7 @@ def send_to_dapnet_pocsag(text_payload, client_id):
                 msg_who = f"*{client_id}*:"
             
             # Set up authentication and headers
-            auth = (CALLSIGN, DAPNET_PASSWORD)
+            auth = (DAPNET_USER, DAPNET_PASSWORD)
             headers = {"Content-Type": "application/json"}
 
             # Send the POST request
